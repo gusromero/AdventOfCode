@@ -13,8 +13,8 @@ def isMarker(candidate):
 def hasDifferentCharacters(candidate):
     
     for char in candidate:
-        candidateModified = candidate.replace(char, "", 1)
-        if candidateModified.find(char) != -1:
+        candidate = candidate.replace(char, "", 1)
+        if candidate.find(char) != -1:
             return False
 
     return True
